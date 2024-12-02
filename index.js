@@ -264,4 +264,23 @@ export async function nepaliTyper(inputField,suggestionField){
       }
     }
   });
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' || event.key === '.') {
+      event.preventDefault();
+  
+      if (input.isContentEditable) {
+        input.innerHTML += "।";
+        const range = document.createRange();
+        const selection = window.getSelection();
+        range.selectNodeContents(input);
+        range.collapse(false);
+        selection.removeAllRanges();
+        selection.addRange(range);
+        
+      } else {
+        input.value += "।";
+        input.setSelectionRange(input.value.length, input.value.length);
+      }
+    }
+  });
 }
