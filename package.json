@@ -1,0 +1,25 @@
+{
+  "name": "nepali-typing",
+  "version": "1.0.0",
+  "description": "Type unique code to nepali",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm run typing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarpanAdhikari/nepali-typing.git"
+  },
+  "keywords": [
+    "nepali-typing",
+    "typing",
+    "nepali"
+  ],
+  "author": "Darpan Adhikari",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/DarpanAdhikari/nepali-typing/issues"
+  },
+  "homepage": "https://github.com/DarpanAdhikari/nepali-typing#readme"
+}
