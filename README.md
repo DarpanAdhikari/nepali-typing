@@ -23,23 +23,6 @@ To use this package, you can either:
 ### Initialize Nepali Typer:
 To initialize the Nepali Typer, call the `nepaliTyper()` function, passing the IDs of the input field and suggestion list.
 
-```javascript
-nepaliTyper('inputField', 'suggestionField');
-```
-
-### Example:
-```html
-<div>
-  <input type="text" id="inputField" placeholder="Type Nepali..."/>
-  <ul id="suggestionField"></ul>
-</div>
-
-<script src="nepaliTyper.js"></script>
-<script>
-  nepaliTyper('inputField', 'suggestionField');
-</script>
-```
-
 ## How It Works
 
 1. **Input Detection:** When the user types in the input field, the package listens for the input and analyzes the text.
