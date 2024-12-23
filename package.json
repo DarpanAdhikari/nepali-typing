@@ -1,6 +1,6 @@
 {
   "name": "nepali-typing",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Type unique code to nepali",
   "main": "index.js",
   "type": "module",
