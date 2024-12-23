@@ -110,12 +110,17 @@ export async function nepaliTyper(inputField,suggestionField){
         return true;
       }
     }
-    const excludeChars = ["अ", "आ", "ऊ","क्","ख्","ग्","घ्","ङ्","च्","छ्","ज्","झ्","ञ्","ट्","ठ्","ड्","ढ्","ण्","त्","थ्","द्","ध्","प्","फ्","ब्","भ्","म्","य्","ल्","व्","श्","ष्","ह्","क्ष","क्ष्","त्र्","ज्ञ्","ई"];
+    const excludeCenterChars = ["अ", "आ", "ऊ"];
     for (let i = 1; i < option.length - 1; i++) {
-      if (excludeChars.includes(option[i])) {
+      if (excludeCenterChars.includes(option[i])) {
         return true;
       }
     }
+    const excludeLastChars = ["अ", "आ", "ऊ","क्","ख्","ग्","घ्","ङ्","च्","छ्","ज्","झ्","ञ्","ट्","ठ्","ड्","ढ्","ण्","त्","थ्","द्","ध्","प्","फ्","ब्","भ्","म्","य्","ल्","व्","श्","ष्","ह्","क्ष","क्ष्","त्र्","ज्ञ्","ई"];
+    if (excludeLastChars.includes(option[option.length - 1])) {
+      return true;
+    }
+
    if (["ऊ", "ङ", "ङ्", "ञ", "ञ्", "ण", "ण्"].includes(option[0])) {
     return true;
    }
