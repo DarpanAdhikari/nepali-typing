@@ -116,9 +116,9 @@ export async function nepaliTyper(inputField,suggestionField){
         return true;
       }
     }
-    if (option[0] === "ऊ") {
-      return true;
-    }
+   if (["ऊ", "ङ", "ङ्", "ञ", "ञ्", "ण", "ण्"].includes(option[0])) {
+    return true;
+   }
     return false;
   }
   
