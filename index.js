@@ -110,7 +110,7 @@ export async function nepaliTyper(inputField,suggestionField){
         return true;
       }
     }
-    const excludeChars = ["अ", "आ", "ऊ"];
+    const excludeChars = ["अ", "आ", "ऊ","क्","ख्","ग्","क्ष", "क्ष्","ई","ण्","ङ्","ञ्","घ्","च्","झ्","ट्","ढ्","ठ्","ड्","ह्","त्र्","ज्ञ्","य्","ल्","व्","श्","फ्","ष्","ब्"];
     for (let i = 1; i < option.length - 1; i++) {
       if (excludeChars.includes(option[i])) {
         return true;
